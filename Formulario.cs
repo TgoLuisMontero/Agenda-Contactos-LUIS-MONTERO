@@ -47,6 +47,7 @@ namespace Agenda___LUIS_MONTERO
             edit_telefono.Text = "";
             edit_nombre.Text = "";
             edit_correo.Text = "";
+            tablaContactos.DataSource = negocio.N_Listar_Contactos();//Refresca
         }
 
         private void btn_buscar_Click(object sender, EventArgs e)
@@ -180,11 +181,12 @@ namespace Agenda___LUIS_MONTERO
                     MessageBox.Show("Contacto eliminado.", "Mensaje", MessageBoxButtons.OK,
                         MessageBoxIcon.Information);
 
-                    tablaContactos.DataSource = negocio.N_Listar_Contactos();
-                    limpiar();
+                    tablaContactos.DataSource = negocio.N_Listar_Contactos();//Refresca la tabla
+                    limpiar();//Limpias las cajas de textos
                 }
                 catch (Exception ex)
                 {
+                    //Mensaje de error:
                     MessageBox.Show("Error al intentar agregar contacto: " + ex.Message, "Error",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }

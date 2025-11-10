@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Formulario));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_eliminar = new FontAwesome.Sharp.IconButton();
@@ -51,8 +50,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btn_buscar = new FontAwesome.Sharp.IconButton();
             this.edit_buscar = new System.Windows.Forms.TextBox();
-            this.Caja_Buscar = new System.Windows.Forms.ToolTip(this.components);
-            this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -309,12 +306,6 @@
             this.edit_buscar.Size = new System.Drawing.Size(553, 39);
             this.edit_buscar.TabIndex = 1;
             // 
-            // Caja_Buscar
-            // 
-            this.Caja_Buscar.Tag = "Caja de Texto Buscar...";
-            this.Caja_Buscar.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
-            this.Caja_Buscar.ToolTipTitle = "Buscar";
-            // 
             // Formulario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -364,7 +355,5 @@
         private System.Windows.Forms.TextBox edit_nombre;
         private System.Windows.Forms.TextBox edit_telefono;
         private System.Windows.Forms.TextBox edit_codigo;
-        private System.Windows.Forms.ToolTip Caja_Buscar;
-        private System.Windows.Forms.ToolTip toolTip2;
     }
 }
